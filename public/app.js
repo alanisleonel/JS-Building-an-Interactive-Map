@@ -32,7 +32,11 @@ const latlngs = [
 var polygon = L.polygon(latlngs, {fill: ""}).addTo(myMap)
 
 // create red pin marker
-
+const rP = L.icon({
+    iconUrl: 'red-pin.png',
+    iconSize: [38, 38],
+    iconAnchor: [19, 38]
+});
 
 // metro station markers
 const rS = L.marker([48.866200610611926, 2.352236247419453]).bindPopup('RÃ©aumur-SÃ©bastopol')
